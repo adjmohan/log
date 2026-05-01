@@ -1,0 +1,12 @@
+package com.anonymous.pro.util
+
+import android.content.Context
+import android.net.ConnectivityManager
+import android.net.NetworkCapabilities
+
+fun isOnline(context: Context): Boolean {
+    val cm = context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
+    val net = cm.activeNetwork ?: return false
+    val act = cm.getNetworkCapabilities(net) ?: return false
+    return act.hasCapability(NetworkCapabilities.NET_CAPABILITY_INTERNET)
+}

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">MQTT</string>
+    <string name="title_activity_main">MQTT</string>
+    <string name="package_name">com.anonymous.pro</string>
+    <string name="custom_url_scheme">com.anonymous.pro</string>
+</resources>
